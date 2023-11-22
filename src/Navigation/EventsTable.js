@@ -3,7 +3,7 @@ import { Fragment, useState, Component } from 'react'
 
 export default function EventsTable(props) {
     let data = props.data;
-    let result = data.result;
+    let results = data.result;
     return(
         <div class="py-8 flex object-center justify-center items-center relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="object-center justify-center text-sm text-center text-gray-500 dark:text-gray-400">
@@ -25,7 +25,7 @@ export default function EventsTable(props) {
             </tr>
         </thead>
         <tbody>
-            {result.map((item, i) => {
+            {results.map((item, i) => {
                 return [
                 <tr key = {i} class="bg-blue-300 border-b dark:bg-gray-800 dark:border-gray-900 hover:bg-blue-400 dark:hover:bg-gray-900">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
